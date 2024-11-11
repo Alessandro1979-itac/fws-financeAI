@@ -17,6 +17,7 @@ const AddTransactionButton = () => {
         Adicionar transação
         <ArrowDownUpIcon />
       </Button>
+
       <UpsertTransactionDialog
         isOpen={dialogIsOpen}
         setIsOpen={setDialogIsOpen}

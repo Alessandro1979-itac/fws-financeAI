@@ -7,7 +7,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/app/_components/ui/chart";
-import { TransactionPercentagePerType } from "@/app/_data/get-dashboard/type";
+import { TransactionPercentagePerType } from "@/app/_data/get-dashboard/types";
 import { TransactionType } from "@prisma/client";
 import { Pie, PieChart } from "recharts";
 import PercentageItem from "./percentage-item";
@@ -87,11 +87,13 @@ const TransactionsPieChart = ({
             title="Receita"
             value={typesPercentage[TransactionType.DEPOSIT]}
           />
+
           <PercentageItem
             icon={<TrendingDownIcon size={16} className="text-red-500" />}
             title="Despesas"
             value={typesPercentage[TransactionType.EXPENSE]}
           />
+
           <PercentageItem
             icon={<PiggyBankIcon size={16} />}
             title="Investido"

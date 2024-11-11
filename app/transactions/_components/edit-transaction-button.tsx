@@ -23,6 +23,7 @@ const EditTransactionButton = ({ transaction }: EditTransactionButtonProps) => {
       >
         <PencilIcon />
       </Button>
+
       <UpsertTransactionDialog
         isOpen={dialogIsOpen}
         setIsOpen={setDialogIsOpen}

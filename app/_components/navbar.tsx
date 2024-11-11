@@ -1,3 +1,5 @@
+"use client";
+
 import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,6 +24,7 @@ const Navbar = () => {
         >
           Dashboard
         </Link>
+
         <Link
           href="/transactions"
           className={
@@ -32,6 +35,7 @@ const Navbar = () => {
         >
           Transações
         </Link>
+
         <Link
           href="/subscription"
           className={
