@@ -140,7 +140,6 @@ const UpsertTransactionDialog = ({
                 </FormItem>
               )}
             />
-
             <FormField
               control={form.control}
               name="amount"
@@ -162,7 +161,6 @@ const UpsertTransactionDialog = ({
                 </FormItem>
               )}
             />
-
             <FormField
               control={form.control}
               name="type"
@@ -175,7 +173,7 @@ const UpsertTransactionDialog = ({
                   >
                     <FormControl>
                       <SelectTrigger>
-                        <SelectValue placeholder="Selecione a transacação..." />
+                        <SelectValue placeholder="Select a verified email to display" />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
@@ -190,7 +188,6 @@ const UpsertTransactionDialog = ({
                 </FormItem>
               )}
             />
-
             <FormField
               control={form.control}
               name="category"
@@ -218,7 +215,6 @@ const UpsertTransactionDialog = ({
                 </FormItem>
               )}
             />
-
             <FormField
               control={form.control}
               name="paymentMethod"
@@ -246,7 +242,6 @@ const UpsertTransactionDialog = ({
                 </FormItem>
               )}
             />
-
             <FormField
               control={form.control}
               name="date"
@@ -258,7 +253,6 @@ const UpsertTransactionDialog = ({
                 </FormItem>
               )}
             />
-
             <DialogFooter>
               <DialogClose asChild>
                 <Button type="button" variant="outline">

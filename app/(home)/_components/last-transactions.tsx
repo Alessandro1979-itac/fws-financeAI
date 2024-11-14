@@ -16,22 +16,17 @@ const LastTransactions = ({ lastTransactions }: LastTransactionsProps) => {
     if (transaction.type === TransactionType.EXPENSE) {
       return "text-red-500";
     }
-
     if (transaction.type === TransactionType.DEPOSIT) {
       return "text-primary";
     }
-
     return "text-white";
   };
-
   const getAmountPrefix = (transaction: Transaction) => {
     if (transaction.type === TransactionType.DEPOSIT) {
       return "+";
     }
-
     return "-";
   };
-
   return (
     <ScrollArea className="rounded-md border">
       <CardHeader className="flex-row items-center justify-between">
@@ -40,7 +35,6 @@ const LastTransactions = ({ lastTransactions }: LastTransactionsProps) => {
           <Link href="/transactions">Ver mais</Link>
         </Button>
       </CardHeader>
-
       <CardContent className="space-y-6">
         {lastTransactions.map((transaction) => (
           <div
@@ -56,7 +50,6 @@ const LastTransactions = ({ lastTransactions }: LastTransactionsProps) => {
                   alt="PIX"
                 />
               </div>
-
               <div>
                 <p className="text-sm font-bold">{transaction.name}</p>
                 <p className="text-sm text-muted-foreground">
@@ -68,7 +61,6 @@ const LastTransactions = ({ lastTransactions }: LastTransactionsProps) => {
                 </p>
               </div>
             </div>
-
             <p className={`text-sm font-bold ${getAmountColor(transaction)}`}>
               {getAmountPrefix(transaction)}
               {formatCurrency(Number(transaction.amount))}
